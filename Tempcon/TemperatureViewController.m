@@ -18,7 +18,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = @"Temp Converter";
+        self.title = @"Tempcon";
     }
     return self;
 }
@@ -65,12 +65,6 @@
     float celsiusToFahrenheit = celsius * 9.0/5.0 + 32;
     self.fahrenheitTextField.text = [NSString stringWithFormat:@"%f", celsiusToFahrenheit];
 }
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-}
-
 
 - (IBAction)clear:(id)sender {
     self.fahrenheitTextField.text = nil;
