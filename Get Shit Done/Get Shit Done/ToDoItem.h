@@ -10,7 +10,7 @@
 
 @interface ToDoItem : NSObject
 
-@property (nonatomic, copy) NSString *text;
+@property (nonatomic, strong) NSString *text;
 
 + (id)toDoItemWithText: (NSString *)text;
 - (id)initWithText: (NSString *)text;

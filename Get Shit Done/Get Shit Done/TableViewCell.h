@@ -7,8 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TableViewCellDelegate.h"
-
 
 @class ToDoItem;
 @class GSDTextLabel;
@@ -16,7 +14,6 @@
 @interface TableViewCell : UITableViewCell <UITextFieldDelegate>
 
 @property (nonatomic, strong) ToDoItem *toDoItem;
-@property (nonatomic, assign) id <TableViewCellDelegate> delegate;
 @property (nonatomic, strong) GSDTextLabel *label;
 
 @end

@@ -45,8 +45,12 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    
     ToDoItem *item = [self.toDoItems objectAtIndex:[indexPath row]];
+    
+    cell.label.delegate = self;
+    cell.label.text = nil;
+    cell.label.tag = indexPath.row;
+    
     cell.label.text = item.text;
     
     return cell;
@@ -92,8 +96,8 @@
     [self.toDoItems insertObject:newToDo atIndex:0];
     
     NSIndexPath *ip = [NSIndexPath indexPathForRow:0 inSection:0];
-    
     [[self tableView] insertRowsAtIndexPaths:[NSArray arrayWithObject:ip] withRowAnimation:UITableViewRowAnimationTop];
+    [self.tableView reloadData];
 }
 
 - (IBAction)toggleEditingMode:(id)sender {
@@ -135,6 +139,31 @@
     [self.toDoItems removeObjectAtIndex:[sourceIndexPath row]];
     [self.toDoItems insertObject:t atIndex:[destinationIndexPath row]];
 
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return NO;
+}
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+{
+    return YES;
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    ToDoItem *updatedToDo = [[ToDoItem alloc] initWithText:textField.text];
+    if (![textField.text isEqualToString:@""]) {
+        [self.toDoItems replaceObjectAtIndex:textField.tag withObject:updatedToDo];
+    }
+    
+    [self.tableView reloadData];
 }
 
 @end

@@ -37,28 +37,5 @@
     [super setSelected:selected animated:animated];
 }
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField
-{
-    [textField resignFirstResponder];
-    return NO;
-}
-
-- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
-{
-    return YES;
-}
-
-
-- (void)textFieldDidBeginEditing:(UITextField *)textField
-{
-    [self.delegate cellDidBeginEditing:self];
-}
-
-- (void)textFieldDidEndEditing:(UITextField *)textField
-{
-    [self.delegate cellDidEndEditing:self];
-    self.toDoItem.text = textField.text;
-    
-}
 
 @end

@@ -60,7 +60,6 @@
 		EAC561FD180DF65A00BA7C65 /* ToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoItem.m; sourceTree = "<group>"; };
 		EAC561FF180DF9A000BA7C65 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		EAC56200180DF9A000BA7C65 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
-		EAC56205180E460400BA7C65 /* TableViewCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCellDelegate.h; sourceTree = "<group>"; };
 		EAC56206180E53BF00BA7C65 /* GSDTextLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSDTextLabel.h; sourceTree = "<group>"; };
 		EAC56207180E53BF00BA7C65 /* GSDTextLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSDTextLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,7 +130,6 @@
 				EAC561DD180DF5B500BA7C65 /* ViewController.m */,
 				EAC561FF180DF9A000BA7C65 /* TableViewCell.h */,
 				EAC56200180DF9A000BA7C65 /* TableViewCell.m */,
-				EAC56205180E460400BA7C65 /* TableViewCellDelegate.h */,
 				EAC56206180E53BF00BA7C65 /* GSDTextLabel.h */,
 				EAC56207180E53BF00BA7C65 /* GSDTextLabel.m */,
 				EAC561DF180DF5B500BA7C65 /* Images.xcassets */,
