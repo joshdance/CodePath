@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EAC561C8180DF5B500BA7C65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC561C7180DF5B500BA7C65 /* Foundation.framework */; };
+		EAC561CA180DF5B500BA7C65 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC561C9180DF5B500BA7C65 /* CoreGraphics.framework */; };
+		EAC561CC180DF5B500BA7C65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC561CB180DF5B500BA7C65 /* UIKit.framework */; };
+		EAC561D2180DF5B500BA7C65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAC561D0180DF5B500BA7C65 /* InfoPlist.strings */; };
+		EAC561D4180DF5B500BA7C65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC561D3180DF5B500BA7C65 /* main.m */; };
+		EAC561D8180DF5B500BA7C65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC561D7180DF5B500BA7C65 /* AppDelegate.m */; };
+		EAC561DB180DF5B500BA7C65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC561D9180DF5B500BA7C65 /* Main.storyboard */; };
+		EAC561DE180DF5B500BA7C65 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC561DD180DF5B500BA7C65 /* ViewController.m */; };
+		EAC561E0180DF5B500BA7C65 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAC561DF180DF5B500BA7C65 /* Images.xcassets */; };
+		EAC561E7180DF5B500BA7C65 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC561E6180DF5B500BA7C65 /* XCTest.framework */; };
+		EAC561E8180DF5B500BA7C65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC561C7180DF5B500BA7C65 /* Foundation.framework */; };
+		EAC561E9180DF5B500BA7C65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC561CB180DF5B500BA7C65 /* UIKit.framework */; };
+		EAC561F1180DF5B500BA7C65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAC561EF180DF5B500BA7C65 /* InfoPlist.strings */; };
+		EAC561F3180DF5B500BA7C65 /* Get_Shit_DoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC561F2180DF5B500BA7C65 /* Get_Shit_DoneTests.m */; };
+		EAC561FE180DF65A00BA7C65 /* ToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC561FD180DF65A00BA7C65 /* ToDoItem.m */; };
+		EAC56201180DF9A000BA7C65 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC56200180DF9A000BA7C65 /* TableViewCell.m */; };
+		EAC56208180E53BF00BA7C65 /* GSDTextLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC56207180E53BF00BA7C65 /* GSDTextLabel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAC561EA180DF5B500BA7C65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAC561BC180DF5B400BA7C65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAC561C3180DF5B500BA7C65;
+			remoteInfo = "Get Shit Done";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EAC561C4180DF5B500BA7C65 /* Get Shit Done.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Get Shit Done.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAC561C7180DF5B500BA7C65 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EAC561C9180DF5B500BA7C65 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EAC561CB180DF5B500BA7C65 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EAC561CF180DF5B500BA7C65 /* Get Shit Done-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Get Shit Done-Info.plist"; sourceTree = "<group>"; };
+		EAC561D1180DF5B500BA7C65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EAC561D3180DF5B500BA7C65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EAC561D5180DF5B500BA7C65 /* Get Shit Done-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Get Shit Done-Prefix.pch"; sourceTree = "<group>"; };
+		EAC561D6180DF5B500BA7C65 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EAC561D7180DF5B500BA7C65 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EAC561DA180DF5B500BA7C65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAC561DC180DF5B500BA7C65 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EAC561DD180DF5B500BA7C65 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EAC561DF180DF5B500BA7C65 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EAC561E5180DF5B500BA7C65 /* Get Shit DoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Get Shit DoneTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAC561E6180DF5B500BA7C65 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EAC561EE180DF5B500BA7C65 /* Get Shit DoneTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Get Shit DoneTests-Info.plist"; sourceTree = "<group>"; };
+		EAC561F0180DF5B500BA7C65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EAC561F2180DF5B500BA7C65 /* Get_Shit_DoneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Get_Shit_DoneTests.m; sourceTree = "<group>"; };
+		EAC561FC180DF65A00BA7C65 /* ToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoItem.h; sourceTree = "<group>"; };
+		EAC561FD180DF65A00BA7C65 /* ToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoItem.m; sourceTree = "<group>"; };
+		EAC561FF180DF9A000BA7C65 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		EAC56200180DF9A000BA7C65 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		EAC56205180E460400BA7C65 /* TableViewCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCellDelegate.h; sourceTree = "<group>"; };
+		EAC56206180E53BF00BA7C65 /* GSDTextLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSDTextLabel.h; sourceTree = "<group>"; };
+		EAC56207180E53BF00BA7C65 /* GSDTextLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSDTextLabel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAC561C1180DF5B500BA7C65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC561CA180DF5B500BA7C65 /* CoreGraphics.framework in Frameworks */,
+				EAC561CC180DF5B500BA7C65 /* UIKit.framework in Frameworks */,
+				EAC561C8180DF5B500BA7C65 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC561E2180DF5B500BA7C65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC561E7180DF5B500BA7C65 /* XCTest.framework in Frameworks */,
+				EAC561E9180DF5B500BA7C65 /* UIKit.framework in Frameworks */,
+				EAC561E8180DF5B500BA7C65 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAC561BB180DF5B400BA7C65 = {
+			isa = PBXGroup;
+			children = (
+				EAC561CD180DF5B500BA7C65 /* Get Shit Done */,
+				EAC561EC180DF5B500BA7C65 /* Get Shit DoneTests */,
+				EAC561C6180DF5B500BA7C65 /* Frameworks */,
+				EAC561C5180DF5B500BA7C65 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAC561C5180DF5B500BA7C65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAC561C4180DF5B500BA7C65 /* Get Shit Done.app */,
+				EAC561E5180DF5B500BA7C65 /* Get Shit DoneTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAC561C6180DF5B500BA7C65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAC561C7180DF5B500BA7C65 /* Foundation.framework */,
+				EAC561C9180DF5B500BA7C65 /* CoreGraphics.framework */,
+				EAC561CB180DF5B500BA7C65 /* UIKit.framework */,
+				EAC561E6180DF5B500BA7C65 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAC561CD180DF5B500BA7C65 /* Get Shit Done */ = {
+			isa = PBXGroup;
+			children = (
+				EAC561D6180DF5B500BA7C65 /* AppDelegate.h */,
+				EAC561D7180DF5B500BA7C65 /* AppDelegate.m */,
+				EAC561D9180DF5B500BA7C65 /* Main.storyboard */,
+				EAC561FC180DF65A00BA7C65 /* ToDoItem.h */,
+				EAC561FD180DF65A00BA7C65 /* ToDoItem.m */,
+				EAC561DC180DF5B500BA7C65 /* ViewController.h */,
+				EAC561DD180DF5B500BA7C65 /* ViewController.m */,
+				EAC561FF180DF9A000BA7C65 /* TableViewCell.h */,
+				EAC56200180DF9A000BA7C65 /* TableViewCell.m */,
+				EAC56205180E460400BA7C65 /* TableViewCellDelegate.h */,
+				EAC56206180E53BF00BA7C65 /* GSDTextLabel.h */,
+				EAC56207180E53BF00BA7C65 /* GSDTextLabel.m */,
+				EAC561DF180DF5B500BA7C65 /* Images.xcassets */,
+				EAC561CE180DF5B500BA7C65 /* Supporting Files */,
+			);
+			path = "Get Shit Done";
+			sourceTree = "<group>";
+		};
+		EAC561CE180DF5B500BA7C65 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAC561CF180DF5B500BA7C65 /* Get Shit Done-Info.plist */,
+				EAC561D0180DF5B500BA7C65 /* InfoPlist.strings */,
+				EAC561D3180DF5B500BA7C65 /* main.m */,
+				EAC561D5180DF5B500BA7C65 /* Get Shit Done-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAC561EC180DF5B500BA7C65 /* Get Shit DoneTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAC561F2180DF5B500BA7C65 /* Get_Shit_DoneTests.m */,
+				EAC561ED180DF5B500BA7C65 /* Supporting Files */,
+			);
+			path = "Get Shit DoneTests";
+			sourceTree = "<group>";
+		};
+		EAC561ED180DF5B500BA7C65 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAC561EE180DF5B500BA7C65 /* Get Shit DoneTests-Info.plist */,
+				EAC561EF180DF5B500BA7C65 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAC561C3180DF5B500BA7C65 /* Get Shit Done */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAC561F6180DF5B500BA7C65 /* Build configuration list for PBXNativeTarget "Get Shit Done" */;
+			buildPhases = (
+				EAC561C0180DF5B500BA7C65 /* Sources */,
+				EAC561C1180DF5B500BA7C65 /* Frameworks */,
+				EAC561C2180DF5B500BA7C65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Get Shit Done";
+			productName = "Get Shit Done";
+			productReference = EAC561C4180DF5B500BA7C65 /* Get Shit Done.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAC561E4180DF5B500BA7C65 /* Get Shit DoneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAC561F9180DF5B500BA7C65 /* Build configuration list for PBXNativeTarget "Get Shit DoneTests" */;
+			buildPhases = (
+				EAC561E1180DF5B500BA7C65 /* Sources */,
+				EAC561E2180DF5B500BA7C65 /* Frameworks */,
+				EAC561E3180DF5B500BA7C65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAC561EB180DF5B500BA7C65 /* PBXTargetDependency */,
+			);
+			name = "Get Shit DoneTests";
+			productName = "Get Shit DoneTests";
+			productReference = EAC561E5180DF5B500BA7C65 /* Get Shit DoneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAC561BC180DF5B400BA7C65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Erin Parker";
+				TargetAttributes = {
+					EAC561E4180DF5B500BA7C65 = {
+						TestTargetID = EAC561C3180DF5B500BA7C65;
+					};
+				};
+			};
+			buildConfigurationList = EAC561BF180DF5B400BA7C65 /* Build configuration list for PBXProject "Get Shit Done" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAC561BB180DF5B400BA7C65;
+			productRefGroup = EAC561C5180DF5B500BA7C65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAC561C3180DF5B500BA7C65 /* Get Shit Done */,
+				EAC561E4180DF5B500BA7C65 /* Get Shit DoneTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAC561C2180DF5B500BA7C65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC561E0180DF5B500BA7C65 /* Images.xcassets in Resources */,
+				EAC561D2180DF5B500BA7C65 /* InfoPlist.strings in Resources */,
+				EAC561DB180DF5B500BA7C65 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC561E3180DF5B500BA7C65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC561F1180DF5B500BA7C65 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAC561C0180DF5B500BA7C65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC561DE180DF5B500BA7C65 /* ViewController.m in Sources */,
+				EAC561D8180DF5B500BA7C65 /* AppDelegate.m in Sources */,
+				EAC561FE180DF65A00BA7C65 /* ToDoItem.m in Sources */,
+				EAC56201180DF9A000BA7C65 /* TableViewCell.m in Sources */,
+				EAC561D4180DF5B500BA7C65 /* main.m in Sources */,
+				EAC56208180E53BF00BA7C65 /* GSDTextLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAC561E1180DF5B500BA7C65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC561F3180DF5B500BA7C65 /* Get_Shit_DoneTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAC561EB180DF5B500BA7C65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAC561C3180DF5B500BA7C65 /* Get Shit Done */;
+			targetProxy = EAC561EA180DF5B500BA7C65 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAC561D0180DF5B500BA7C65 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAC561D1180DF5B500BA7C65 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EAC561D9180DF5B500BA7C65 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAC561DA180DF5B500BA7C65 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EAC561EF180DF5B500BA7C65 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAC561F0180DF5B500BA7C65 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAC561F4180DF5B500BA7C65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EAC561F5180DF5B500BA7C65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAC561F7180DF5B500BA7C65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Get Shit Done/Get Shit Done-Prefix.pch";
+				INFOPLIST_FILE = "Get Shit Done/Get Shit Done-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EAC561F8180DF5B500BA7C65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Get Shit Done/Get Shit Done-Prefix.pch";
+				INFOPLIST_FILE = "Get Shit Done/Get Shit Done-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EAC561FA180DF5B500BA7C65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Get Shit Done.app/Get Shit Done";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Get Shit Done/Get Shit Done-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Get Shit DoneTests/Get Shit DoneTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EAC561FB180DF5B500BA7C65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Get Shit Done.app/Get Shit Done";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Get Shit Done/Get Shit Done-Prefix.pch";
+				INFOPLIST_FILE = "Get Shit DoneTests/Get Shit DoneTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAC561BF180DF5B400BA7C65 /* Build configuration list for PBXProject "Get Shit Done" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC561F4180DF5B500BA7C65 /* Debug */,
+				EAC561F5180DF5B500BA7C65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAC561F6180DF5B500BA7C65 /* Build configuration list for PBXNativeTarget "Get Shit Done" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC561F7180DF5B500BA7C65 /* Debug */,
+				EAC561F8180DF5B500BA7C65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EAC561F9180DF5B500BA7C65 /* Build configuration list for PBXNativeTarget "Get Shit DoneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAC561FA180DF5B500BA7C65 /* Debug */,
+				EAC561FB180DF5B500BA7C65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAC561BC180DF5B400BA7C65 /* Project object */;
+}

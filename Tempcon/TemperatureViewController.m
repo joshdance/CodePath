@@ -9,7 +9,7 @@
 #import "TemperatureViewController.h"
 
 @interface TemperatureViewController ()
-
+- (IBAction)clear:(id)sender;
 @end
 
 @implementation TemperatureViewController
@@ -59,6 +59,8 @@
     self.celsiusTextField.text = [NSString stringWithFormat:@"%f", fahrenheitToCelsius];
 }
 
+// - (float)celsiusWithFahrenheit: (float)fahrenheit;
+// - (float)fahrenheitWithCelsius: (float)celsius;
 
 - (void)updateF {
     float celsius = [self.celsiusTextField.text floatValue];

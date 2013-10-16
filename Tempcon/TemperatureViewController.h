@@ -16,6 +16,4 @@
 @property (strong, nonatomic) IBOutlet UITextField *celsiusTextField;
 @property (strong, nonatomic) IBOutlet UITextField *fahrenheitTextField;
 
-- (IBAction)clear:(id)sender;
-
 @end
