@@ -36,4 +36,14 @@
     [super setSelected:selected animated:animated];
 }
 
+- (BOOL)canBecomeFirstResponder
+{
+    return YES;
+}
+
+- (BOOL)canResignFirstResponder
+{
+    return YES;
+}
+
 @end

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GSDTextLabel : UITextField
+@interface GSDTextLabel : UITextField <UITextFieldDelegate, UIScrollViewDelegate>
 
 @end

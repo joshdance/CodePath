@@ -55,6 +55,7 @@ NSString *const GSDToDoKey = @"GSDToDoKey";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    
     ToDoItem *item = [self.toDoItems objectAtIndex:[indexPath row]];
     
     cell.label.delegate = self;
@@ -110,9 +111,7 @@ NSString *const GSDToDoKey = @"GSDToDoKey";
     [[self tableView] insertRowsAtIndexPaths:[NSArray arrayWithObject:ip] withRowAnimation:UITableViewRowAnimationTop];
     
     TableViewCell *cell = (TableViewCell *)[self.tableView cellForRowAtIndexPath:ip];
-    [cell.label performSelector:@selector(becomeFirstResponder) withObject:nil afterDelay:0.0];
-    
-    [self.tableView reloadData];
+    [cell.label becomeFirstResponder];
 }
 
 - (IBAction)toggleEditingMode:(id)sender {
@@ -171,7 +170,6 @@ NSString *const GSDToDoKey = @"GSDToDoKey";
     ToDoItem *updatedToDo = [[ToDoItem alloc] initWithText:textField.text];
     [self.toDoItems replaceObjectAtIndex:textField.tag withObject:updatedToDo];
     [self saveItems];
-    [self.tableView reloadData];
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView

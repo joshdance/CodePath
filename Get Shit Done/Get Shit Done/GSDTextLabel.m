@@ -34,4 +34,13 @@
     [super setText:text];
 }
 
+- (BOOL)canBecomeFirstResponder
+{
+    return YES;
+}
+
+- (BOOL)canResignFirstResponder
+{
+    return YES;
+}
 @end
