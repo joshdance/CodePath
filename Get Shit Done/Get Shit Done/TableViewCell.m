@@ -18,7 +18,6 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         _label = [[GSDTextLabel alloc] initWithFrame:CGRectNull];
-        _label.delegate = self;
         _label.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
         [self addSubview:_label];
         self.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -36,6 +35,5 @@
 {
     [super setSelected:selected animated:animated];
 }
-
 
 @end

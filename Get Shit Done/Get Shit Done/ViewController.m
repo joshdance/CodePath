@@ -15,18 +15,28 @@
 
 @end
 
+NSString *const GSDToDoKey = @"GSDToDoKey";
+
 @implementation ViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     self.navigationItem.leftBarButtonItem = [self editButtonItem];
     
-    self.toDoItems = [[NSMutableArray alloc] init];
-    [self.toDoItems addObject:[ToDoItem toDoItemWithText:@"Snatch 75lbs"]];
-    [self.toDoItems addObject:[ToDoItem toDoItemWithText:@"Clean and jerk 105lbs"]];
-    [self.toDoItems addObject:[ToDoItem toDoItemWithText:@"Finish Spitfire iOS7 app"]];
-  
+    NSString *path = [[self applicationDocumentsDirectory].path stringByAppendingPathComponent:@"items.archive"];
+
+    self.toDoItems = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+    
+    if (self.toDoItems == nil) {
+        self.toDoItems = [[NSMutableArray alloc] init];
+        
+        [self.toDoItems addObject:[ToDoItem toDoItemWithText:@"Snatch 75lbs"]];
+        [self.toDoItems addObject:[ToDoItem toDoItemWithText:@"Clean and jerk 105lbs"]];
+        [self.toDoItems addObject:[ToDoItem toDoItemWithText:@"Finish Spitfire iOS7 app"]];
+    }
+
     [self.tableView registerClass:[TableViewCell class] forCellReuseIdentifier:@"cell"];
     [self.tableView reloadData];
 }
@@ -73,12 +83,13 @@
 }
 
 - (void) setEditing:(BOOL)editing animated:(BOOL)animated {
+    
     [super setEditing:editing animated:animated];
     
     [self.tableView setEditing:editing animated:animated];
 }
 
-- (void) tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         
@@ -97,6 +108,10 @@
     
     NSIndexPath *ip = [NSIndexPath indexPathForRow:0 inSection:0];
     [[self tableView] insertRowsAtIndexPaths:[NSArray arrayWithObject:ip] withRowAnimation:UITableViewRowAnimationTop];
+    
+    TableViewCell *cell = (TableViewCell *)[self.tableView cellForRowAtIndexPath:ip];
+    [cell.label performSelector:@selector(becomeFirstResponder) withObject:nil afterDelay:0.0];
+    
     [self.tableView reloadData];
 }
 
@@ -138,13 +153,12 @@
     
     [self.toDoItems removeObjectAtIndex:[sourceIndexPath row]];
     [self.toDoItems insertObject:t atIndex:[destinationIndexPath row]];
-
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    [textField resignFirstResponder];
-    return NO;
+    [self.view endEditing:YES];
+    return YES;
 }
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
@@ -152,18 +166,27 @@
     return YES;
 }
 
-- (void)textFieldDidBeginEditing:(UITextField *)textField
-{
-}
-
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
     ToDoItem *updatedToDo = [[ToDoItem alloc] initWithText:textField.text];
-    if (![textField.text isEqualToString:@""]) {
-        [self.toDoItems replaceObjectAtIndex:textField.tag withObject:updatedToDo];
-    }
-    
+    [self.toDoItems replaceObjectAtIndex:textField.tag withObject:updatedToDo];
+    [self saveItems];
     [self.tableView reloadData];
+}
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    [self.view endEditing:YES];
+}
+
+- (NSURL *)applicationDocumentsDirectory {
+    return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+}
+
+- (BOOL)saveItems {
+    NSString *path = [[self applicationDocumentsDirectory].path stringByAppendingPathComponent:@"items.archive"];
+    [self.toDoItems writeToFile:path atomically:YES];
+    return [NSKeyedArchiver archiveRootObject:self.toDoItems toFile:path];
 }
 
 @end
