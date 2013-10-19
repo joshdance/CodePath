@@ -162,7 +162,16 @@ NSString *const GSDToDoKey = @"GSDToDoKey";
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 {
-    return YES;
+     return YES;
+}
+
+- (void)textFieldDidBeginEditing: (UITextField *)textField
+{
+    UIView *contentView = (UIView *)[textField superview];
+    TableViewCell *cell = (TableViewCell *)[contentView superview];
+    NSIndexPath *ip = [self.tableView indexPathForCell:cell];
+    [self.tableView moveRowAtIndexPath:ip toIndexPath:0];
+    
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField
